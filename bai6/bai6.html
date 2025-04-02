@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function tinhTong(cart){
+            return cart.reduce((total,item)=>total+item.price*item.quantity,0);
+        }
+        const cart= [
+            {name: "Men men",price: 30000,quantity:2},
+            {name: "Mi tom",price:5000,quantity:1},
+            {name: "Banh bao",price:15000,quantity:3}
+        ];
+        console.log("Tong tien so tien la; ", tinhTong(cart));
+    </script>
+</body>
+</html>
